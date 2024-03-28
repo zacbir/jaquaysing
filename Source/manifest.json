@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Jaquaysing the Internet",
+	"version": "1.0",
+	"description": "Replaces the text 'Xandering' with 'Jaquaysing'.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["jaquaysing.js"],
+			"run_at": "document_end"
+		}
+	]
+}
